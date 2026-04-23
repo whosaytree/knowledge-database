@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge Visualizer</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <p class="eyebrow">Current Knowledge Base</p>
+          <h1>Knowledge Visualizer</h1>
+          <p class="sidebar__text">从当前项目直接读取，不维护第二份内容。</p>
+        </div>
+        <nav id="tree" class="tree" aria-label="Knowledge tree"></nav>
+      </aside>
+
+      <main class="content">
+        <header class="hero">
+          <div>
+            <p class="eyebrow">Live View</p>
+            <h2 id="page-title">正在读取知识库</h2>
+          </div>
+          <p id="page-subtitle" class="hero__meta">页面内容直接来自当前目录和 Markdown。</p>
+        </header>
+
+        <section id="overview" class="overview"></section>
+        <article id="article" class="article"></article>
+      </main>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+  </html>
