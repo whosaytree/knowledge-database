@@ -32,6 +32,8 @@
 
 项目包含一个独立的双模式可视化原型，用于从当前目录结构生成知识树和节点阅读页。
 
+在线浏览：<https://whosaytree.github.io/knowledge-database/>
+
 - 可视化代码位于 `visualizer/`
 - 页面内容直接读取 `knowledge/**/index.md`
 - 不维护第二份网页内容
@@ -57,6 +59,15 @@ node visualizer/build-static.mjs
 
 静态模式适合部署到 GitHub Pages；每次仓库内容更新后重新构建即可同步可视化结果。
 
+线上访问地址：
+
+- GitHub Pages：<https://whosaytree.github.io/knowledge-database/>
+
+访问方式：
+
+- 任何可访问 `github.io` 的设备都可以直接打开，无需拉取仓库，也无需本地运行服务。
+- 线上页面展示的是最近一次 push 到 GitHub 后自动构建的结果。
+
 GitHub Pages 使用方式：
 
 1. 首次进入仓库 `Settings -> Pages`，将 Source 设为 `GitHub Actions`
@@ -67,6 +78,11 @@ GitHub Pages 使用方式：
 
 - 本地模式读取当前工作区内容，适合查看未提交改动
 - GitHub Pages 读取最近一次 push 后自动构建的静态结果，适合分享链接
+
+自动更新规则：
+
+- 每次 push 到 `main`，GitHub Actions 会自动重新构建并部署可视化页面。
+- 本地未提交或未 push 的改动不会出现在线上页面中。
 
 ## 协作方式
 

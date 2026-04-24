@@ -36,6 +36,16 @@ GitHub Pages 部署：
 2. push 到 `main` 时，workflow `Deploy Visualizer` 会自动构建并部署
 3. 默认线上地址为 `https://whosaytree.github.io/knowledge-database/`
 
+线上可用性：
+
+- GitHub Pages 链接可在任意可访问 `github.io` 的设备上打开。
+- 不依赖本地 Node 服务，不要求用户下载仓库。
+
+内容更新方式：
+
+- push 到 `main` 后，workflow `Deploy Visualizer` 会自动重新部署。
+- 线上页面始终对应最近一次成功部署的仓库版本。
+
 ## 当前能力
 
 - 自动读取 `knowledge/` 下的节点目录
