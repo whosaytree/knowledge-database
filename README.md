@@ -30,14 +30,14 @@
 
 ## 可视化
 
-项目包含一个独立的本地可视化原型，用于从当前目录结构实时生成知识树和节点阅读页。
+项目包含一个独立的双模式可视化原型，用于从当前目录结构生成知识树和节点阅读页。
 
 - 可视化代码位于 `visualizer/`
 - 页面内容直接读取 `knowledge/**/index.md`
 - 不维护第二份网页内容
 - 不写入知识文件
 
-启动方式：
+本地实时模式：
 
 ```bash
 node visualizer/server.mjs
@@ -48,6 +48,25 @@ node visualizer/server.mjs
 ```text
 http://localhost:4173
 ```
+
+静态构建模式：
+
+```bash
+node visualizer/build-static.mjs
+```
+
+静态模式适合部署到 GitHub Pages；每次仓库内容更新后重新构建即可同步可视化结果。
+
+GitHub Pages 使用方式：
+
+1. 首次进入仓库 `Settings -> Pages`，将 Source 设为 `GitHub Actions`
+2. push 到 `main` 后，GitHub Actions 会自动执行 `.github/workflows/visualizer-pages.yml`
+3. 部署完成后，可通过 `https://whosaytree.github.io/knowledge-database/` 访问线上可视化
+
+模式区别：
+
+- 本地模式读取当前工作区内容，适合查看未提交改动
+- GitHub Pages 读取最近一次 push 后自动构建的静态结果，适合分享链接
 
 ## 协作方式
 
@@ -61,3 +80,4 @@ http://localhost:4173
 - 项目规则：[`meta/`](meta/)
 - 知识内容：[`knowledge/`](knowledge/)
 - 可视化：[`visualizer/`](visualizer/)
+- 线上可视化：[GitHub Pages](https://whosaytree.github.io/knowledge-database/)

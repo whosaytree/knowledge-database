@@ -24,3 +24,8 @@
       - [Dense Retrieval](knowledge/AI/machine-learning/search-and-retrieval/dense-retrieval/index.md)
         - [Embedding](knowledge/AI/machine-learning/search-and-retrieval/dense-retrieval/embedding/index.md)
           - [E5](knowledge/AI/machine-learning/search-and-retrieval/dense-retrieval/embedding/e5/index.md)
+        - [Late Interaction](knowledge/AI/machine-learning/search-and-retrieval/dense-retrieval/late-interaction/index.md)
+          - [ColBERT v2](knowledge/AI/machine-learning/search-and-retrieval/dense-retrieval/late-interaction/colbert-v2/index.md)
+    - [NLP](knowledge/AI/machine-learning/nlp/index.md)
+      - [Transformer](knowledge/AI/machine-learning/nlp/transformer/index.md)
+        - [BERT](knowledge/AI/machine-learning/nlp/transformer/bert/index.md)

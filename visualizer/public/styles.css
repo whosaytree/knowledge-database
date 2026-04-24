@@ -213,6 +213,24 @@ pre {
   color: var(--accent);
 }
 
+.math-inline {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.math-block {
+  overflow-x: auto;
+  margin: 1.2rem 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f6f3ec;
+}
+
+.math-block mjx-container {
+  margin: 0 !important;
+}
+
 @media (max-width: 900px) {
   .shell {
     grid-template-columns: 1fr;

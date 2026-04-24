@@ -47,10 +47,12 @@ doc_4: sparse retrieval + 很长的无关正文
 
 BM25 的常见形式是：
 
-```text
-score(D, Q) = sum IDF(q_i) * ( f(q_i, D) * (k1 + 1) )
-                         / ( f(q_i, D) + k1 * (1 - b + b * |D| / avgdl) )
-```
+$$
+\mathrm{score}(D, Q) = \sum_{q_i \in Q} \mathrm{IDF}(q_i)
+\cdot
+\frac{f(q_i, D) \cdot (k_1 + 1)}
+{f(q_i, D) + k_1 \cdot \left(1 - b + b \cdot \frac{|D|}{\mathrm{avgdl}}\right)}
+$$
 
 其中：
 
