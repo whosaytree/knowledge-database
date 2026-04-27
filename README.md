@@ -14,6 +14,9 @@
 目前已开始整理 AI 方向知识，包含：
 
 - `LLM -> Fine-tuning -> LoRA`
+- `Machine Learning -> Optimization`
+  - `SGD`
+  - `Adam`
 - `Machine Learning -> Search & Retrieval`
   - `Sparse Retrieval -> Inverted Index`
   - `Sparse Retrieval -> BM25`

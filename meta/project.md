@@ -30,16 +30,22 @@ knowledge/AI/
     fine-tuning/
       lora/
   machine-learning/
+    optimization/
+      sgd/
+      adam/
     search-and-retrieval/
 ```
 
-其中 `Sparse Retrieval -> Inverted Index` 已作为第一个较完整的检索知识节点完成。
+其中：
+
+- `Sparse Retrieval -> Inverted Index` 已作为较完整的检索知识节点完成。
+- `Machine Learning -> Optimization -> SGD / Adam` 已形成一个可继续扩展的训练优化路径。
 
 后续重点是：
 
-- 继续扩展 AI 下的核心知识路径，包括 LLM、Fine-tuning、Search & Retrieval 等方向。
+- 继续扩展 AI 下的核心知识路径，包括 LLM、Fine-tuning、Search & Retrieval、Optimization 等方向。
 - 保持每个节点主题清晰、结构稳定。
 - 新增节点时同步更新父节点目录和 `catalog.md`。
 - 在写入前先审阅内容草稿。
-- 逐步沉淀适合长期维护的节点模板和目录规则。
+- 逐步沉淀适合长期维护的节点模板、比较框架和目录规则。
 - 保持展示层和知识内容层解耦，避免前端结构反向绑死知识库。

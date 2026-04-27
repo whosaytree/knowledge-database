@@ -12,6 +12,13 @@
 
 主知识库目录：`knowledge/`
 
+- [Math](knowledge/math/index.md)
+  - [Exponential Moving Average](knowledge/math/exponential-moving-average/index.md)
+- [Computer Science](knowledge/computer-science/index.md)
+  - [Character Encoding](knowledge/computer-science/character-encoding/index.md)
+    - [ASCII编码](knowledge/computer-science/character-encoding/ascii/index.md)
+    - [Unicode编码](knowledge/computer-science/character-encoding/unicode/index.md)
+  - [Units](knowledge/computer-science/units/index.md)
 - [AI](knowledge/AI/index.md)
   - [LLM](knowledge/AI/llm/index.md)
     - [Fine-tuning](knowledge/AI/llm/fine-tuning/index.md)
@@ -29,3 +36,7 @@
     - [NLP](knowledge/AI/machine-learning/nlp/index.md)
       - [Transformer](knowledge/AI/machine-learning/nlp/transformer/index.md)
         - [BERT](knowledge/AI/machine-learning/nlp/transformer/bert/index.md)
+    - [Optimization](knowledge/AI/machine-learning/optimization/index.md)
+      - [SGD](knowledge/AI/machine-learning/optimization/sgd/index.md)
+      - [Adam](knowledge/AI/machine-learning/optimization/adam/index.md)
+    - [Reinforcement Learning](knowledge/AI/machine-learning/reinforcement-learning/index.md)
