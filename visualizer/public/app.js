@@ -7,6 +7,7 @@ const article = document.querySelector('#article');
 let currentTree = [];
 let dataMode = null;
 let currentNodeSlug = '';
+let staticDataVersion = '';
 
 function slugFromHash() {
   return decodeURIComponent(window.location.hash.replace(/^#\/?/, ''));
@@ -50,8 +51,16 @@ function assetUrl(relativePath) {
   return new URL(relativePath, document.baseURI);
 }
 
-async function fetchJson(url) {
-  const response = await fetch(url);
+function versionedAssetUrl(relativePath) {
+  const url = assetUrl(relativePath);
+  if (staticDataVersion) {
+    url.searchParams.set('v', staticDataVersion);
+  }
+  return url;
+}
+
+async function fetchJson(url, options = {}) {
+  const response = await fetch(url, options);
   if (!response.ok) {
     throw new Error(`Failed to load ${url}`);
   }
@@ -70,7 +79,8 @@ async function resolveDataMode() {
   }
 
   try {
-    await fetchJson(assetUrl('./data/tree.json'));
+    staticDataVersion = `${Date.now()}`;
+    await fetchJson(versionedAssetUrl('./data/tree.json'), { cache: 'no-store' });
     dataMode = 'static';
   } catch {
     dataMode = 'live';
@@ -164,7 +174,7 @@ function renderOverview(node) {
 async function fetchTree() {
   const mode = await resolveDataMode();
   const payload = mode === 'static'
-    ? await fetchJson(assetUrl('./data/tree.json'))
+    ? await fetchJson(versionedAssetUrl('./data/tree.json'), { cache: 'no-store' })
     : await fetchJson('/api/tree');
   currentTree = payload.tree;
   treeRoot.innerHTML = createTreeMarkup(currentTree);
@@ -176,9 +186,9 @@ async function fetchNode(slug) {
   if (mode === 'static') {
     const segments = slug.split('/').filter(Boolean).map(encodeURIComponent);
     const nodePath = segments.length
-      ? assetUrl(`./data/node/${segments.join('/')}/index.json`)
-      : assetUrl('./data/tree.json');
-    return fetchJson(nodePath);
+      ? versionedAssetUrl(`./data/node/${segments.join('/')}/index.json`)
+      : versionedAssetUrl('./data/tree.json');
+    return fetchJson(nodePath, { cache: 'no-store' });
   }
   return fetchJson(`/api/node?slug=${encodeURIComponent(slug)}`);
 }
