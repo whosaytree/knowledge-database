@@ -11,16 +11,47 @@
 
 ## 当前知识范围
 
-目前已开始整理 AI 方向知识，包含：
+目前已开始整理以下知识分支：
 
-- `LLM -> Fine-tuning -> LoRA`
-- `Machine Learning -> Optimization`
-  - `SGD`
-  - `Adam`
-- `Machine Learning -> Search & Retrieval`
-  - `Sparse Retrieval -> Inverted Index`
-  - `Sparse Retrieval -> BM25`
-  - `Dense Retrieval -> Embedding -> E5`
+- `Scientific Thinking`
+  - `Occam's razor`
+- `Computer Science`
+  - `Character Encoding -> ASCII`
+  - `Character Encoding -> Unicode`
+- `Math`
+  - `Exponential Moving Average`
+- `AI -> LLM`
+  - `Fine-tuning -> LoRA`
+  - `Distributed Training -> FSDP`
+  - `Distributed Training -> Megatron`
+- `AI -> Machine Learning`
+  - `Search & Retrieval`
+    - `Sparse Retrieval -> Inverted Index`
+    - `Sparse Retrieval -> BM25`
+    - `Dense Retrieval -> Embedding -> E5`
+    - `Dense Retrieval -> Flat`
+    - `Dense Retrieval -> FAISS`
+    - `Dense Retrieval -> Late Interaction -> ColBERT v2`
+  - `Generalization`
+    - `Evaluation Methods`
+    - `Validation Set`
+    - `Testing Set`
+  - `Evaluation Metrics`
+    - `Accuracy`
+    - `Precision and Recall`
+    - `F1 Score`
+    - `ROC`
+  - `Loss Functions -> MSE`
+  - `Parameter Estimation`
+    - `Maximum Likelihood Estimation`
+    - `Least Squares Method`
+  - `Supervised Learning -> Regression -> Linear Regression`
+  - `NLP -> Transformer -> BERT`
+  - `Optimization`
+    - `SGD`
+    - `Adam`
+    - `No Free Lunch Theorem`
+  - `Reinforcement Learning`
 
 ## 组织原则
 

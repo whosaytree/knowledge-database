@@ -37,6 +37,7 @@ LLM 的工程实现通常涉及以下层面：
 ## 子节点
 
 - [Fine-tuning](fine-tuning/index.md)
+- [Distributed Training](distributed-training/index.md)
 
 ## 待整理
 
