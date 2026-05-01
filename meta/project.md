@@ -14,36 +14,84 @@
 
 ## 当前阶段
 
-当前已经完成基础框架初始化，并开始录入真实知识节点。
+当前已经完成基础框架初始化，知识内容已进入持续扩展阶段。
 
-同时已补充一个本地可视化原型：
+当前项目同时维护本地与 GitHub Pages 两种可视化访问方式：
 
 - 位于 `visualizer/` 目录。
 - 通过读取 `knowledge/` 当前目录结构和 `index.md` 内容生成页面。
 - 用于浏览“当下的知识库”，而不是维护一份独立副本。
+- push 到 `main` 后，会通过 GitHub Actions 自动重新构建并部署静态页面。
 
-已建立的早期知识路径包括：
+当前已经形成的主要知识路径包括：
 
 ```text
+knowledge/scientific-thinking/
+  occams-razor/
+
+knowledge/computer-science/
+  character-encoding/
+    ascii/
+    unicode/
+
+knowledge/math/
+  exponential-moving-average/
+
 knowledge/AI/
   llm/
+    distributed-training/
+      fsdp/
+      megatron/
     fine-tuning/
       lora/
   machine-learning/
+    evaluation-metrics/
+      accuracy/
+      precision-and-recall/
+      f1-score/
+      roc/
+    generalization/
+      evaluation-methods/
+      validation-set/
+      testing-set/
+    loss-functions/
+      mse/
+    parameter-estimation/
+      maximum-likelihood-estimation/
+      least-squares-method/
+    supervised-learning/
+      regression/
+        linear-regression/
+    nlp/
+      transformer/
+        bert/
     optimization/
       sgd/
       adam/
+      no-free-lunch-theorem/
     search-and-retrieval/
+      sparse-retrieval/
+        inverted-index/
+        bm25/
+      dense-retrieval/
+        embedding/
+          e5/
+        flat/
+        faiss/
+        late-interaction/
+          colbert-v2/
 ```
 
 其中：
 
-- `Sparse Retrieval -> Inverted Index` 已作为较完整的检索知识节点完成。
-- `Machine Learning -> Optimization -> SGD / Adam` 已形成一个可继续扩展的训练优化路径。
+- `Search & Retrieval` 已形成从稀疏检索到稠密检索的主路径。
+- `Optimization`、`Generalization`、`Evaluation Metrics`、`Parameter Estimation` 已形成基础机器学习训练与评估框架。
+- `LLM` 下已形成 `Fine-tuning` 与 `Distributed Training` 两条可继续扩展的工程路径。
+- `Scientific Thinking`、`Computer Science`、`Math` 已建立独立根节点，用于承载跨 AI 的基础知识。
 
 后续重点是：
 
-- 继续扩展 AI 下的核心知识路径，包括 LLM、Fine-tuning、Search & Retrieval、Optimization 等方向。
+- 继续扩展现有主路径下的关键空白节点，优先补齐父节点中已出现但尚未展开的术语。
 - 保持每个节点主题清晰、结构稳定。
 - 新增节点时同步更新父节点目录和 `catalog.md`。
 - 在写入前先审阅内容草稿。
