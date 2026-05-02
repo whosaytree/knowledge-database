@@ -283,7 +283,6 @@ Adam 发展出了很多变体，最常见的包括：
 
 ## 待整理
 
-- SGD：最基础的随机梯度下降方法。
 - Momentum：对梯度方向做历史平滑。
 - RMSProp：按梯度平方历史自适应缩放步长。
 - AdamW：解耦 weight decay 的 Adam 变体。

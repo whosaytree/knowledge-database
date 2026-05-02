@@ -89,4 +89,3 @@ $$
 
 - MAE：与 MSE 对异常值敏感性不同。
 - Huber Loss：在 MSE 与 MAE 之间做折中。
-- Regression：MSE 最常见的应用场景。

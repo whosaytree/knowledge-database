@@ -193,5 +193,4 @@ SGD 的工程实现相对简单，因为它几乎不需要复杂额外状态。
 - Nesterov Momentum：提前观察方向的动量变体。
 - Learning Rate Schedule：动态调整学习率的训练策略。
 - Weight Decay：控制参数规模的正则化方法。
-- Adam：结合动量与自适应学习率的优化器。
 - RMSProp：按梯度平方历史调节更新步长。

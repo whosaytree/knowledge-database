@@ -41,7 +41,6 @@ LLM 的工程实现通常涉及以下层面：
 
 ## 待整理
 
-- Transformer：LLM 最常见的基础网络结构。
 - Token：模型处理文本的基本离散单位。
 - Pretraining：用大规模数据训练通用能力。
 - Instruction Tuning：让模型学会遵循任务指令。

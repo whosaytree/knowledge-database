@@ -209,9 +209,7 @@ ASCII 中 `A` 和 `B` 的编码值接近，并不代表它们语义接近；embe
 
 ## 待整理
 
-- Unicode：统一全球字符集的标准体系。
 - UTF-8：最常见的 Unicode 变长编码方式。
 - Tokenizer：把文本切成 token 并映射为 token id。
 - Token：模型处理文本时使用的离散符号单位。
-- Embedding：把离散 token 表示成连续语义向量的方法。
 - 字符集与编码：字符集合和二进制表示规则不是同一层概念。

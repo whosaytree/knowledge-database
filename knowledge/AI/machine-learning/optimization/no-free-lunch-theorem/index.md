@@ -178,6 +178,5 @@ No Free Lunch Theorem 不应被理解为：
 
 - Inductive Bias：算法为什么会偏好某类问题结构。
 - Model Selection：如何在具体任务上选择方法。
-- Generalization：局部有效经验能外推到多大范围。
 - Benchmark：算法比较依赖什么任务集合。
 - Search Space：优化算法实际面对的候选解空间。

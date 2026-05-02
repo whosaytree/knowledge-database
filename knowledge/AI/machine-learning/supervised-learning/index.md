@@ -10,16 +10,19 @@ Supervised learning 讨论的是：给定带有标签的数据，模型如何学
 
 - [Regression](regression/index.md)：预测连续数值。
 - Classification：预测离散类别。
+- [Softmax](softmax/index.md)：把多类别 logits 转换成概率分布的常用归一化函数。
 
 ## 与相关节点的关系
 
 - `Loss Functions` 讨论监督学习中训练目标如何定义。
 - `Optimization` 讨论这些目标如何被实际最小化。
 - `Generalization` 讨论模型在训练集上学到的规律，能否迁移到新样本。
+- `Softmax` 常用于多分类任务的输出层。
 
 ## 子节点
 
 - [Regression](regression/index.md)
+- [Softmax](softmax/index.md)
 
 ## 待整理
 

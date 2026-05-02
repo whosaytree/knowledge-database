@@ -57,7 +57,6 @@ Fine-tuning 与预训练、提示词工程、RAG 和对齐关系密切。
 ## 待整理
 
 - Full Fine-tuning：更新模型全部参数的微调方式。
-- LoRA：训练低秩适配参数的微调方法。
 - QLoRA：结合量化和 LoRA 的低显存训练方法。
 - SFT：使用监督数据训练模型输出。
 - Instruction Tuning：让模型学习遵循指令。

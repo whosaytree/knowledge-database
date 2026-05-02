@@ -30,9 +30,6 @@ Search & Retrieval 是机器学习系统中的基础能力之一。
 
 ## 待整理
 
-- [Sparse Retrieval](sparse-retrieval/index.md)
-- [Dense Retrieval](dense-retrieval/index.md)
-- Embedding
 - Vector Database
 - Hybrid Search
 - Reranking

@@ -126,7 +126,6 @@ $$
 
 ## 待整理
 
-- F1 Score：precision 与 recall 的调和平均。
 - Confusion Matrix：precision 与 recall 的基础计数框架。
 - Threshold：分类阈值如何影响 precision 与 recall。
 - PR Curve：不同阈值下 precision-recall 的整体表现。

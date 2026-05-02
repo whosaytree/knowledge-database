@@ -323,5 +323,4 @@ BERT 应位于 `NLP -> Transformer` 路径下。
 - `[CLS]`：常用作整句聚合表示的特殊 token。
 - `[SEP]`：句段分隔标记。
 - WordPiece：BERT 常见的子词切分方法。
-- Fine-tuning：把预训练模型适配到具体任务。
 - Encoder-Only Model：只有编码器、偏理解的模型路线。
