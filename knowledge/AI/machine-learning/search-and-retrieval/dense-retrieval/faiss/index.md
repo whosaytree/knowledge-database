@@ -293,6 +293,7 @@ FAISS 解决的是“怎么高效做向量近邻搜索”
 
 适合后续继续拆分为：
 
+- [Faiss 索引结构对比](faiss-index-comparison/index.md)：从速度、召回、内存和构建成本比较 Flat、HNSW、IVF、PQ 等结构。
 - IndexFlat：暴力精确搜索的基础索引。
 - IVF：基于聚类分桶的 ANN 索引。
 - PQ：通过量化压缩向量。

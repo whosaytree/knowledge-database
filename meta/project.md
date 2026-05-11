@@ -36,6 +36,7 @@ knowledge/computer-science/
 
 knowledge/math/
   exponential-moving-average/
+  standard-deviation/
 
 knowledge/AI/
   llm/

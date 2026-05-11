@@ -14,6 +14,7 @@
 
 - [Math](knowledge/math/index.md)
   - [Exponential Moving Average](knowledge/math/exponential-moving-average/index.md)
+  - [Standard Deviation](knowledge/math/standard-deviation/index.md)
 - [Scientific Thinking](knowledge/scientific-thinking/index.md)
   - [Occam's razor](knowledge/scientific-thinking/occams-razor/index.md)
 - [Computer Science](knowledge/computer-science/index.md)
