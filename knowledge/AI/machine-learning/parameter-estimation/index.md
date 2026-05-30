@@ -18,6 +18,7 @@ Parameter estimation 讨论的是：当模型结构已经给定时，如何根�
 
 - [Maximum Likelihood Estimation](maximum-likelihood-estimation/index.md)：选择让观测数据出现概率最大的参数。
 - [Least Squares Method](least-squares-method/index.md)：选择让误差平方和最小的参数。
+- [Prior and Posterior](prior-and-posterior/index.md)：贝叶斯更新中观察数据前后的参数分布。
 - MAP：在似然基础上再结合先验信息。
 - Bayesian Estimation：把参数本身看作随机变量。
 - EM Algorithm：在含隐变量时迭代求参数估计。
@@ -32,6 +33,7 @@ Parameter estimation 讨论的是：当模型结构已经给定时，如何根�
 
 - [Maximum Likelihood Estimation](maximum-likelihood-estimation/index.md)
 - [Least Squares Method](least-squares-method/index.md)
+- [Prior and Posterior](prior-and-posterior/index.md)
 
 ## 待整理
 

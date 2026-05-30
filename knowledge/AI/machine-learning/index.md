@@ -8,6 +8,7 @@
 - [Loss Functions](loss-functions/index.md)
 - [Parameter Estimation](parameter-estimation/index.md)
 - [Supervised Learning](supervised-learning/index.md)
+- [Computer Vision](computer-vision/index.md)
 - [NLP](nlp/index.md)
 - [Optimization](optimization/index.md)
 - [Reinforcement Learning](reinforcement-learning/index.md)

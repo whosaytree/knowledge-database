@@ -58,11 +58,14 @@ Full Fine-tuning 通过更新全部参数改变模型行为。LoRA 通过低秩�
 
 在工程实践中，一个基础模型可以搭配多个 LoRA adapter。不同 adapter 可以对应不同任务、领域或客户场景，部署时按需加载或合并。
 
+## 子节点
+
+- [LoRA Adapter](lora-adapter/index.md)
+
 ## 待整理
 
 - Rank：LoRA 低秩矩阵的秩。
 - Alpha：控制 LoRA 更新强度的缩放参数。
-- Adapter：独立保存的 LoRA 参数。
 - Target Modules：注入 LoRA 的目标层。
 - Merge：将 LoRA 权重合并到基础模型。
 - PEFT：只训练少量参数的微调范式。

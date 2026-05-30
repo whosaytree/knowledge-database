@@ -21,6 +21,7 @@ Loss function 讨论的是：模型输出与目标之间的偏差，如何被量
 - [MSE](mse/index.md)：最常见的回归损失之一，对较大误差施加平方惩罚。
 - MAE：对误差做绝对值惩罚。
 - [Cross Entropy](cross-entropy/index.md)：分类任务中最常见的损失之一。
+- [Focal Loss](focal-loss/index.md)：在 cross entropy 基础上降低易分类样本权重，常用于类别不均衡任务。
 - [KL Divergence](kl-divergence/index.md)：衡量一个分布相对另一个分布的额外信息代价。
 - Huber Loss：兼顾平方误差与绝对误差特性的折中形式。
 
@@ -34,6 +35,7 @@ Loss function 讨论的是：模型输出与目标之间的偏差，如何被量
 
 - [MSE](mse/index.md)
 - [Cross Entropy](cross-entropy/index.md)
+- [Focal Loss](focal-loss/index.md)
 - [KL Divergence](kl-divergence/index.md)
 
 ## 待整理

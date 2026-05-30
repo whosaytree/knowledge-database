@@ -10,6 +10,22 @@ Reinforcement Learning（强化学习）研究的是：智能体如何在环境�
 
 强化学习通常围绕 agent、environment、state、action、reward 这几个元素展开。
 
+![Agent-environment interaction in reinforcement learning](images/agent-environment-interaction.svg)
+
+## Agent 与 Environment 的边界
+
+Agent 和 environment 的分界线不一定等同于物理边界。
+
+例如，机器人身体上的传感器和马达通常也被视为 environment 的一部分。对人或动物来说，肌肉与感官器官也属于 environment。奖励信号虽然物理上可能在体内产生，但在强化学习建模中仍然被视作外部信号，因为它定义了学习目标，agent 不能任意修改它。
+
+一个实用准则是：凡是 agent 不能任意改变的部分，都属于 environment。
+
+这意味着 environment 不等同于“未知”，它更准确地说是 agent 不能直接控制、只能通过 action 间接影响的部分。
+
+在复杂系统中，还可能存在多个 agent 层次。例如，高层 agent 负责战略决策，低层 agent 执行这些决策。每一层都可以有自己的 state、action、reward 和 agent-environment 边界。
+
+一旦具体任务中的 state、action 和 reward 被定义清楚，agent-environment 边界也就随之确定。
+
 一个基本循环通常是：
 
 1. Agent 观察当前状态 state。
@@ -38,6 +54,10 @@ Reinforcement Learning（强化学习）研究的是：智能体如何在环境�
 
 强化学习方法大致可以分成几类：
 
+- [k-armed Bandit Problem](k-armed-bandit-problem/index.md)：最简化的强化学习决策问题，突出 exploration 与 exploitation 的权衡。
+- [Dynamic Programming](dynamic-programming/index.md)：在已知环境模型时，用 Bellman 方程计算价值函数并改进策略。
+- [Monte Carlo Methods](monte-carlo-methods/index.md)：不依赖环境模型，通过完整 episode 的实际回报样本估计价值和改进策略。
+- [Temporal-Difference Learning](temporal-difference-learning/index.md)：不依赖环境模型，用一步奖励和下一状态价值估计进行在线更新。
 - Value-Based Methods：学习状态价值或动作价值，再据此选动作，例如 Q-Learning、DQN。
 - Policy-Based Methods：直接学习策略分布，输出在某个状态下应采取什么动作。
 - Actor-Critic Methods：同时学习策略和价值函数，兼顾优化方向与训练稳定性。
@@ -70,9 +90,16 @@ Reinforcement Learning 是 Machine Learning 的一个重要分支，但它更强
 
 它和 NLP、LLM、Search & Retrieval 不同，关注点不是文本表示或检索排序，而是在交互式环境中优化长期行为。不过在现代 AI 系统中，强化学习也常用于优化推荐策略、Agent 行为和 LLM 对齐流程。
 
+## 子节点
+
+- [Markov Decision Process](markov-decision-process/index.md)
+- [Dynamic Programming](dynamic-programming/index.md)
+- [Monte Carlo Methods](monte-carlo-methods/index.md)
+- [Temporal-Difference Learning](temporal-difference-learning/index.md)
+- [k-armed Bandit Problem](k-armed-bandit-problem/index.md)
+
 ## 待整理
 
-- MDP：描述状态转移和奖励的决策框架。
 - Policy：给定状态时选择动作的规则。
 - Value Function：评估状态或动作的长期价值。
 - Q-Learning：基于动作价值更新策略的方法。
