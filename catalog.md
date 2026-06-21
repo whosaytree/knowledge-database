@@ -71,6 +71,7 @@
         - [U-Net](knowledge/AI/machine-learning/computer-vision/image-segmentation/u-net/index.md)
     - [NLP](knowledge/AI/machine-learning/nlp/index.md)
       - [Corpus](knowledge/AI/machine-learning/nlp/corpus/index.md)
+      - [N-gram](knowledge/AI/machine-learning/nlp/n-gram/index.md)
       - [Transformer](knowledge/AI/machine-learning/nlp/transformer/index.md)
         - [BERT](knowledge/AI/machine-learning/nlp/transformer/bert/index.md)
     - [Optimization](knowledge/AI/machine-learning/optimization/index.md)
